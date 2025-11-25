@@ -119,7 +119,8 @@ body {
   border: 1px solid rgba(220, 38, 38, 0.45);
 }
 
-@media (max-width: 480px) {
+/* AJUSTE PARA TELÉFONOS: BAJAR MUCHO LOS CAMPOS */
+@media (max-width: 768px) {
   .container {
     max-width: 360px;
   }
@@ -128,10 +129,10 @@ body {
     font-size: 1.2rem;
   }
 
-  /* Bajamos el bloque de campos en celular */
   .overlay {
-    align-items: flex-start;   /* deja de centrar vertical y nos permite empujar */
-    padding-top: 40vh;         /* prueba 40% de la altura de la pantalla */
+    align-items: flex-start; /* deja de centrar vertical */
+    padding-top: 60vh;       /* LOS BAJA BASTANTE: prueba 60% de la altura */
+    padding-bottom: 10vh;    /* deja aire abajo para que no quede tan pegado */
   }
 }
 
