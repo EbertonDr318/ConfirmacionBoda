@@ -10,66 +10,70 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Hoja de estilos (OJO: style.css, sin "s") -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay">
-    <div class="container">
-      <form id="formBoda">
-        <!-- NOMBRE -->
-        <div class="campo">
-          <label for="nombre" class="titulo">Nombre de Familia o Asistente</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Nombre de Familia o Asistente"
-            required
-          />
-        </div>
+  <main class="page">
+    <div class="card">
+      <!-- Imagen de la invitación -->
+      <img src="IMAGENES/invitacion-boda.png" alt="Invitación Boda" class="card-bg">
 
-        <!-- CANTIDAD DE ADULTOS -->
-        <div class="campo">
-          <label for="adultos" class="titulo">Cantidad de Adultos</label>
-          <input
-            type="number"
-            id="adultos"
-            name="adultos"
-            min="0"
-            value="0"
-            placeholder="Cantidad de Adultos"
-            required
-          />
-        </div>
+      <!-- Formulario sobre la imagen -->
+      <div class="form-overlay">
+        <form id="formBoda">
+          <!-- NOMBRE -->
+          <div class="campo">
+            <label for="nombre" class="titulo">Nombre de Familia o Asistente</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre de Familia o Asistente"
+              required
+            />
+          </div>
 
-        <!-- CANTIDAD DE NIÑOS -->
-        <div class="campo">
-          <label for="ninos" class="titulo">Cantidad de Niños</label>
-          <input
-            type="number"
-            id="ninos"
-            name="ninos"
-            min="0"
-            value="0"
-            placeholder="Cantidad de Niños"
-            required
-          />
-        </div>
+          <!-- CANTIDAD DE ADULTOS -->
+          <div class="campo">
+            <label for="adultos" class="titulo">Cantidad de Adultos</label>
+            <input
+              type="number"
+              id="adultos"
+              name="adultos"
+              min="0"
+              value="1"
+              placeholder="Cantidad de Adultos"
+              required
+            />
+          </div>
 
-        <button type="submit" class="btn-enviar">Enviar</button>
+          <!-- CANTIDAD DE NIÑOS -->
+          <div class="campo">
+            <label for="ninos" class="titulo">Cantidad de Niños</label>
+            <input
+              type="number"
+              id="ninos"
+              name="ninos"
+              min="0"
+              value="0"
+              placeholder="Cantidad de Niños"
+              required
+            />
+          </div>
 
-        <div id="mensajeExito" class="mensaje-exito">
-          ¡Gracias por confirmar su asistencia!
-        </div>
-        <div id="mensajeError" class="mensaje-error">
-          Ocurrió un error al enviar. Inténtelo de nuevo más tarde.
-        </div>
-      </form>
+          <button type="submit" class="btn-enviar">Enviar</button>
+
+          <div id="mensajeExito" class="mensaje-exito">
+            ¡Gracias por confirmar su asistencia!
+          </div>
+          <div id="mensajeError" class="mensaje-error">
+            Ocurrió un error al enviar. Inténtelo de nuevo más tarde.
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <!-- Lógica de la página -->
   <script src="script.js"></script>
 </body>
 </html>
