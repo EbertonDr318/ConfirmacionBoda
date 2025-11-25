@@ -3,7 +3,7 @@ const mensajeExito = document.getElementById("mensajeExito");
 const mensajeError = document.getElementById("mensajeError");
 
 // URL de tu Apps Script (Web App)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwV41t8DPRl8mtX6Wt-_z01VIBFS33z5cI7iNJ9alQLRg5mIa2r719OnGwXuQ9NCoiK5w/exec";
+const SCRIPT_URL = "TU_URL_DE_WEBAPP_AQUI";
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
