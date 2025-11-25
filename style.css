@@ -119,8 +119,12 @@ body {
   border: 1px solid rgba(220, 38, 38, 0.45);
 }
 
-/* AJUSTE PARA TELÉFONOS: BAJAR MUCHO LOS CAMPOS */
+/* AJUSTE PARA TELÉFONOS (iOS y Android) */
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;  /* quita el 'fixed' en móviles */
+  }
+
   .container {
     max-width: 360px;
   }
@@ -131,8 +135,9 @@ body {
 
   .overlay {
     align-items: flex-start; /* deja de centrar vertical */
-    padding-top: 60vh;       /* LOS BAJA BASTANTE: prueba 60% de la altura */
-    padding-bottom: 10vh;    /* deja aire abajo para que no quede tan pegado */
+    padding-top: 48vh;       /* INICIO DE LOS CAJONES, justo debajo de los nombres */
+    padding-bottom: 10vh;
   }
 }
+
 
