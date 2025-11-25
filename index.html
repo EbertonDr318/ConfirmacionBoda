@@ -29,32 +29,34 @@
           />
         </div>
 
-        <!-- CANTIDAD DE ADULTOS -->
-        <div class="campo">
-          <label for="adultos" class="titulo">Cantidad de Adultos</label>
-          <input
-            type="number"
-            id="adultos"
-            name="adultos"
-            min="0"
-            placeholder="Cantidad de Adultos"
-            required
-            />
-        </div>
+                      <!-- CANTIDAD DE ADULTOS -->
+              <div class="campo">
+                <label for="adultos" class="titulo">Cantidad de Adultos</label>
+                <input
+                  type="text"
+                  id="adultos"
+                  name="adultos"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  placeholder="Cantidad de Adultos"
+                  required
+                />
+              </div>
+              
+              <!-- CANTIDAD DE NIÑOS -->
+              <div class="campo">
+                <label for="ninos" class="titulo">Cantidad de Niños</label>
+                <input
+                  type="text"
+                  id="ninos"
+                  name="ninos"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  placeholder="Cantidad de Niños"
+                  required
+                />
+              </div>
 
-        <!-- CANTIDAD DE NIÑOS -->
-        <div class="campo">
-          <label for="ninos" class="titulo">Cantidad de Niños</label>
-        
-            <input
-              type="number"
-              id="ninos"
-              name="ninos"
-              min="0"
-              placeholder="Cantidad de Niños"
-              required
-            />
-        </div>
 
         <button type="submit" class="btn-enviar">Enviar</button>
 
