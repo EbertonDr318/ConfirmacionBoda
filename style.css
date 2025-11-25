@@ -3,55 +3,43 @@
   --rosa-pastel: #FADADD;
 }
 
-/* ===== LAYOUT GENERAL ===== */
+/* ===== FONDO (INVITACIÓN COMO FONDO COMPLETO) ===== */
 body {
   margin: 0;
   padding: 0;
   font-family: "Cormorant Garamond", serif;
-  background-color: #f3f3f3;   /* color neutro detrás de la tarjeta */
+  /* Usa tu imagen de la carpeta IMAGENES */
+  background-image: url("IMAGENES/FondoPrueba.png"); /* ⬅️ cambia esto */
+  background-size: cover;           /* ocupa toda la pantalla */
+  background-position: center top;  /* puedes probar center center si quieres */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-.page {
+/* Capa para centrar el formulario */
+.overlay {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: transparent;
   box-sizing: border-box;
 }
 
-/* Tarjeta con la imagen de invitación */
-.card {
-  position: relative;
-  width: 100%;
-  max-width: 430px;      /* ancho máximo de la invitación */
-}
-
-/* La imagen se adapta sin recortar, siempre completa */
-.card-bg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ===== FORMULARIO SOBRE LA IMAGEN ===== */
-.form-overlay {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;               /* ancho de los cajones respecto a la tarjeta */
+/* FORMULARIO */
+#formBoda {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-/*
-  Ajuste de la posición vertical de los cajones:
-  Este "top" es un porcentaje de la altura de la imagen.
-  Lo puedes subir/bajar un poco si no queda perfecto.
-*/
-.form-overlay {
-  top: 35%;   /* prueba entre 22% y 28% según veas */
+  gap: 14px;
 }
 
 .campo {
@@ -65,7 +53,7 @@ body {
   top: -9999px;
 }
 
-/* Estilo de cajones tipo invitación */
+/* Cajones tipo invitación */
 .campo input[type="text"],
 .campo input[type="number"] {
   width: 100%;
@@ -87,9 +75,9 @@ body {
   color: #777;
 }
 
-/* Botón igual que los cajones */
+/* BOTÓN */
 .btn-enviar {
-  width: 60%;
+  width: 70%;
   margin: 8px auto 0 auto;
   padding: 10px 18px;
   border-radius: 999px;
@@ -114,7 +102,7 @@ body {
   box-shadow: 0 3px 8px rgba(0,0,0,0.10);
 }
 
-/* Mensajes debajo del botón */
+/* MENSAJES */
 .mensaje-exito,
 .mensaje-error {
   margin-top: 10px;
@@ -139,22 +127,12 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
-
-/* En pantallas pequeñas (celular) la tarjeta ocupa casi todo el ancho */
 @media (max-width: 480px) {
-  .card {
-    max-width: 380px;
+  .container {
+    max-width: 360px;
   }
 
   .campo input::placeholder {
-    font-size: 1.15rem;
-  }
-}
-
-/* En pantallas grandes puedes ajustar un poco la posición si lo necesitas */
-@media (min-width: 900px) {
-  .form-overlay {
-    top: 25%;   /* pequeño ajuste para laptop/pc */
-    width: 70%;
+    font-size: 1.2rem;
   }
 }
