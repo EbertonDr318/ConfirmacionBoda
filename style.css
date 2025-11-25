@@ -51,7 +51,7 @@ body {
   Lo puedes subir/bajar un poco si no queda perfecto.
 */
 .form-overlay {
-  top: 24%;   /* prueba entre 22% y 28% según veas */
+  top: 35%;   /* prueba entre 22% y 28% según veas */
 }
 
 .campo {
