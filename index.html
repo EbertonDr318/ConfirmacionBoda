@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Hoja de estilos (OJO: style.css, sin "s") -->
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,37 +29,38 @@
           />
         </div>
 
-                      <!-- CANTIDAD DE ADULTOS -->
-              <div class="campo">
-                <label for="adultos" class="titulo">Cantidad de Adultos</label>
-                <input
-                  type="text"
-                  id="adultos"
-                  name="adultos"
-                  inputmode="numeric"
-                  pattern="[0-9]*"
-                  placeholder="Cantidad de Adultos"
-                  required
-                />
-              </div>
-              
-              <!-- CANTIDAD DE NIÑOS -->
-              <div class="campo">
-                <label for="ninos" class="titulo">Cantidad de Niños</label>
-                <input
-                  type="text"
-                  id="ninos"
-                  name="ninos"
-                  inputmode="numeric"
-                  pattern="[0-9]*"
-                  placeholder="Cantidad de Niños"
-                  required
-                />
-              </div>
+        <!-- CANTIDAD DE ADULTOS -->
+        <div class="campo">
+          <label for="adultos" class="titulo">Cantidad de Adultos</label>
+          <input
+            type="text"
+            id="adultos"
+            name="adultos"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            placeholder="Cantidad de Adultos"
+            required
+          />
+        </div>
+        
+        <!-- CANTIDAD DE NIÑOS -->
+        <div class="campo">
+          <label for="ninos" class="titulo">Cantidad de Niños</label>
+          <input
+            type="text"
+            id="ninos"
+            name="ninos"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            placeholder="Cantidad de Niños"
+            required
+          />
+        </div>
 
-
+        <!-- BOTÓN ENVIAR -->
         <button type="submit" class="btn-enviar">Enviar</button>
 
+        <!-- MENSAJES -->
         <div id="mensajeExito" class="mensaje-exito">
           ¡Gracias por confirmar su asistencia!
         </div>
