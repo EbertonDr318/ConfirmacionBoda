@@ -96,6 +96,14 @@ body {
   box-shadow: 0 3px 8px rgba(0,0,0,0.10);
 }
 
+/* Estado deshabilitado (cuando se está enviando) */
+.btn-enviar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+}
+
 .mensaje-exito,
 .mensaje-error {
   margin-top: 10px;
@@ -139,5 +147,3 @@ body {
     padding-bottom: 10vh;
   }
 }
-
-
