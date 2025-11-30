@@ -8,7 +8,7 @@ body {
   padding: 0;
   font-family: "Cormorant Garamond", serif;
   /* usa la imagen que tienes en IMAGENES */
-  background-image: url("IMAGENES/FondoPrueba.png"); /* cambia por el nombre exacto: .png, .jpg, etc. */
+  background-image: url("IMAGENES/FONDO_FINAL.png"); /* cambia por el nombre exacto: .png, .jpg, etc. */
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
