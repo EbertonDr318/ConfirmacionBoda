@@ -143,7 +143,7 @@ body {
 
   .overlay {
     align-items: flex-start; /* deja de centrar vertical */
-    padding-top: 60vh;       /* INICIO DE LOS CAJONES, justo debajo de los nombres */
+    padding-top: 55vh;       /* INICIO DE LOS CAJONES, justo debajo de los nombres */
     padding-bottom: 10vh;
   }
 }
